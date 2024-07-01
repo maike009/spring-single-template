@@ -79,6 +79,7 @@ public class CommonController {
         return Result.success(controllerScanner.getAllControllerEndpoints());
     }
 
+
     @GetMapping("/common/hello")
     public void hello () {
 

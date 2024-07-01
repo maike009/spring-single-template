@@ -95,6 +95,7 @@ public class ControllerScanner {
                                      *      /user -> /user-POST
                                      *      /user -> /user-PUT
                                      *      /user -> /user-DELETE
+                                     *      不需要加类路径了，每个接口方法上已经加上了
                                      */
                                     if (classMappingPath.equals(methodMappingPath)){
 //                                        fullPath = classMappingPath + methodMappingPath + "-" + (optionalS.orElseGet(() -> "NOT"));
