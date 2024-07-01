@@ -90,15 +90,20 @@ public class ControllerScanner {
                                 Set<String> methodMappingPaths = pathPatternsCondition.getPatternValues();
                                 for (String methodMappingPath : methodMappingPaths) {
                                     String fullPath;
-                                    // 如果类的路径和方法的路径相同，添加请求方法类型
+                                    /** 如果类的路径和方法的路径相同，添加请求方法类型
+                                     * 例如：/user -> /user-GET
+                                     *      /user -> /user-POST
+                                     *      /user -> /user-PUT
+                                     *      /user -> /user-DELETE
+                                     */
                                     if (classMappingPath.equals(methodMappingPath)){
-                                        fullPath = classMappingPath + methodMappingPath + "-" + (optionalS.orElseGet(() -> "NOT"));
-                                        endpoints.add(fullPath);
+//                                        fullPath = classMappingPath + methodMappingPath + "-" + (optionalS.orElseGet(() -> "NOT"));
+                                        endpoints.add(methodMappingPath + "-" + (optionalS.orElseGet(() -> "NOT")));
                                         break;
                                     }
                                     // 组合类的路径和方法的路径
-                                    fullPath = classMappingPath + methodMappingPath;
-                                    endpoints.add(fullPath);
+//                                    fullPath = classMappingPath + methodMappingPath;
+                                    endpoints.add(methodMappingPath + "-" + (optionalS.orElseGet(() -> "NOT")));
                                 }
                             }
                         }

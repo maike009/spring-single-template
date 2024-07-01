@@ -140,3 +140,184 @@ Consider defining a bean of type 'com.mk.utils.AliOssUtil' in your configuration
 2024-07-01 15:20:45.451  INFO 82602 --- [main] com.mk.SpringApplicationTests            : Started SpringApplicationTests in 3.019 seconds (JVM running for 4.391)
 2024-07-01 15:20:46.007  INFO 82602 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2024-07-01 15:20:46.015  INFO 82602 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 15:37:17.421  INFO 84403 --- [main] com.mk.SpringApplicationTests            : Starting SpringApplicationTests using Java 21.0.3 on maikeUbuntu with PID 84403 (started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:37:17.422  INFO 84403 --- [main] com.mk.SpringApplicationTests            : The following 1 profile is active: "dev"
+2024-07-01 15:37:18.131  INFO 84403 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:37:18.133  INFO 84403 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:37:18.157  INFO 84403 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:37:18.595  INFO 84403 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:37:18.946  INFO 84403 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:37:19.449  INFO 84403 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:37:20.131  INFO 84403 --- [main] com.mk.SpringApplicationTests            : Started SpringApplicationTests in 3.006 seconds (JVM running for 4.328)
+2024-07-01 15:37:20.670  INFO 84403 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 15:37:20.682  INFO 84403 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 15:37:23.989  INFO 80395 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 15:37:23.990  INFO 80395 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 15:37:26.393  INFO 84613 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 84613 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:37:26.395  INFO 84613 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 15:37:26.886  INFO 84613 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:37:26.888  INFO 84613 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:37:26.904  INFO 84613 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:37:27.356  INFO 84613 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 15:37:27.361  INFO 84613 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 15:37:27.362  INFO 84613 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 15:37:27.414  INFO 84613 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 15:37:27.414  INFO 84613 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2024-07-01 15:37:27.467  INFO 84613 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:37:27.633  INFO 84613 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:37:27.994  INFO 84613 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:37:28.271  INFO 84613 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 15:37:28.277  INFO 84613 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 2.126 seconds (JVM running for 2.526)
+2024-07-01 15:37:50.486  INFO 84613 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 15:37:50.487  INFO 84613 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-01 15:37:50.488  INFO 84613 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-01 15:40:35.069  WARN 84613 --- [http-nio-9090-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:9906/db_dev?serverTimezone=UTC&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true, version : 1.2.8, lastPacketReceivedIdleMillis : 187434
+2024-07-01 15:40:35.071  WARN 84613 --- [http-nio-9090-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:9906/db_dev?serverTimezone=UTC&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true, version : 1.2.8, lastPacketReceivedIdleMillis : 187444
+2024-07-01 15:40:35.071  WARN 84613 --- [http-nio-9090-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:9906/db_dev?serverTimezone=UTC&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true, version : 1.2.8, lastPacketReceivedIdleMillis : 187447
+2024-07-01 15:40:35.072  WARN 84613 --- [http-nio-9090-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:9906/db_dev?serverTimezone=UTC&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true, version : 1.2.8, lastPacketReceivedIdleMillis : 187450
+2024-07-01 15:40:35.072  WARN 84613 --- [http-nio-9090-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:9906/db_dev?serverTimezone=UTC&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true, version : 1.2.8, lastPacketReceivedIdleMillis : 187455
+2024-07-01 15:40:35.080 DEBUG 84613 --- [http-nio-9090-exec-5] c.m.module.mapper.UserMapper.selectList  : ==>  Preparing: SELECT id,name FROM user
+2024-07-01 15:40:35.101 DEBUG 84613 --- [http-nio-9090-exec-5] c.m.module.mapper.UserMapper.selectList  : ==> Parameters: 
+2024-07-01 15:40:35.118 DEBUG 84613 --- [http-nio-9090-exec-5] c.m.module.mapper.UserMapper.selectList  : <==      Total: 2
+2024-07-01 15:46:57.443  INFO 84613 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 15:46:57.446  INFO 84613 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 15:47:00.554  INFO 85565 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 85565 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:47:00.556  INFO 85565 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 15:47:00.970  INFO 85565 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:47:00.971  INFO 85565 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:47:00.985  INFO 85565 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:47:01.376  INFO 85565 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 15:47:01.380  INFO 85565 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 15:47:01.380  INFO 85565 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 15:47:01.425  INFO 85565 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 15:47:01.425  INFO 85565 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 836 ms
+2024-07-01 15:47:01.469  INFO 85565 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:47:01.612  INFO 85565 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:47:01.947  INFO 85565 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:47:02.231  INFO 85565 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 15:47:02.236  INFO 85565 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 2.005 seconds (JVM running for 2.62)
+2024-07-01 15:47:08.815  INFO 85565 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 15:47:08.815  INFO 85565 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-01 15:47:08.816  INFO 85565 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-01 15:50:43.974  INFO 85565 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 15:50:43.978  INFO 85565 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 15:50:47.088  INFO 86029 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 86029 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:50:47.091  INFO 86029 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 15:50:47.514  INFO 86029 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:50:47.516  INFO 86029 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:50:47.528  INFO 86029 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:50:48.019  INFO 86029 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 15:50:48.025  INFO 86029 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 15:50:48.026  INFO 86029 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 15:50:48.087  INFO 86029 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 15:50:48.087  INFO 86029 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 941 ms
+2024-07-01 15:50:48.140  INFO 86029 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:50:48.420  INFO 86029 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:50:48.865  INFO 86029 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:50:49.199  INFO 86029 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 15:50:49.205  INFO 86029 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 2.387 seconds (JVM running for 2.873)
+2024-07-01 15:50:59.189  INFO 86029 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 15:50:59.190  INFO 86029 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-01 15:50:59.190  INFO 86029 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-01 15:53:54.224  INFO 86029 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 15:53:54.229  INFO 86029 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 15:53:57.820  INFO 86425 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 86425 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:53:57.823  INFO 86425 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 15:53:58.191  INFO 86425 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:53:58.193  INFO 86425 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:53:58.205  INFO 86425 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:53:58.573  INFO 86425 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 15:53:58.577  INFO 86425 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 15:53:58.578  INFO 86425 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 15:53:58.635  INFO 86425 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 15:53:58.635  INFO 86425 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 781 ms
+2024-07-01 15:53:58.679  INFO 86425 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:53:58.825  INFO 86425 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:53:59.143  INFO 86425 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:53:59.424  INFO 86425 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 15:53:59.430  INFO 86425 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 1.925 seconds (JVM running for 2.553)
+2024-07-01 15:54:04.159  INFO 86425 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 15:54:04.160  INFO 86425 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-01 15:54:04.161  INFO 86425 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-01 15:55:23.259  INFO 86425 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 15:55:23.263  INFO 86425 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 15:55:26.596  INFO 86714 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 86714 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:55:26.597  INFO 86714 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 15:55:26.950  INFO 86714 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:55:26.951  INFO 86714 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:55:26.962  INFO 86714 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:55:27.424  INFO 86714 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 15:55:27.430  INFO 86714 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 15:55:27.430  INFO 86714 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 15:55:27.484  INFO 86714 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 15:55:27.485  INFO 86714 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 861 ms
+2024-07-01 15:55:27.551  INFO 86714 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:55:27.723  INFO 86714 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:55:28.091  INFO 86714 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:55:28.374  INFO 86714 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 15:55:28.380  INFO 86714 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 2.068 seconds (JVM running for 2.599)
+2024-07-01 15:55:33.619  INFO 86714 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 15:55:33.620  INFO 86714 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-01 15:55:33.621  INFO 86714 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-01 15:57:08.127  INFO 86714 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 15:57:08.133  INFO 86714 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 15:57:11.447  INFO 87036 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 87036 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:57:11.449  INFO 87036 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 15:57:11.812  INFO 87036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:57:11.813  INFO 87036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:57:11.826  INFO 87036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:57:12.251  INFO 87036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 15:57:12.257  INFO 87036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 15:57:12.258  INFO 87036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 15:57:12.323  INFO 87036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 15:57:12.324  INFO 87036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 836 ms
+2024-07-01 15:57:12.375  INFO 87036 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:57:12.547  INFO 87036 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:57:12.933  INFO 87036 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:57:13.214  INFO 87036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 15:57:13.219  INFO 87036 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 2.043 seconds (JVM running for 2.738)
+2024-07-01 15:57:16.669  INFO 87036 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 15:57:16.669  INFO 87036 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-01 15:57:16.670  INFO 87036 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-01 16:02:29.793  INFO 87036 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 16:02:29.798  INFO 87036 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 16:02:33.052  INFO 87495 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 87495 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 16:02:33.055  INFO 87495 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 16:02:33.552  INFO 87495 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 16:02:33.555  INFO 87495 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 16:02:33.574  INFO 87495 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-07-01 16:02:34.125  INFO 87495 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 16:02:34.133  INFO 87495 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 16:02:34.134  INFO 87495 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 16:02:34.198  INFO 87495 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 16:02:34.198  INFO 87495 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1111 ms
+2024-07-01 16:02:34.265  INFO 87495 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 16:02:34.429  INFO 87495 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 16:02:34.769  INFO 87495 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 16:02:35.054  INFO 87495 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 16:02:35.060  INFO 87495 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 2.277 seconds (JVM running for 2.674)
+2024-07-01 16:02:39.693  INFO 87495 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 16:02:39.693  INFO 87495 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-01 16:02:39.695  INFO 87495 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-01 16:03:49.125  INFO 87495 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 16:03:49.130  INFO 87495 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 16:03:52.150  INFO 87768 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 87768 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 16:03:52.152  INFO 87768 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 16:03:52.524  INFO 87768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 16:03:52.526  INFO 87768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 16:03:52.537  INFO 87768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-07-01 16:03:52.920  INFO 87768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 16:03:52.925  INFO 87768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 16:03:52.925  INFO 87768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 16:03:52.972  INFO 87768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 16:03:52.972  INFO 87768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 794 ms
+2024-07-01 16:03:53.020  INFO 87768 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 16:03:53.183  INFO 87768 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 16:03:53.518  INFO 87768 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 16:03:53.793  INFO 87768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 16:03:53.798  INFO 87768 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 1.95 seconds (JVM running for 2.575)
+2024-07-01 16:04:50.076  INFO 87768 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 16:04:50.077  INFO 87768 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-01 16:04:50.078  INFO 87768 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-01 16:05:10.336  INFO 87768 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 16:05:10.339  INFO 87768 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

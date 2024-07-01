@@ -5,29 +5,33 @@ import com.mk.module.service.EmailService;
 import com.mk.pojo.dto.LoginDto;
 import com.mk.pojo.result.Result;
 import com.mk.utils.AliOssUtil;
+import com.mk.utils.ControllerScanner;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @RestController
 @RequestMapping("/common")
 @Slf4j
 @Api(tags = "通用接口")
 public class CommonController {
-    @Autowired
-    private EmailService emailService;
-    @Autowired
-    private AliOssUtil aliOssUtil;
+    private final EmailService emailService;
+    private final AliOssUtil aliOssUtil;
+
+    private final ControllerScanner controllerScanner;
+
+    public CommonController(EmailService emailService, AliOssUtil aliOssUtil, ControllerScanner controllerScanner) {
+        this.emailService = emailService;
+        this.aliOssUtil = aliOssUtil;
+        this.controllerScanner = controllerScanner;
+    }
+
     @PostMapping("/email")
     @ApiOperation("发送邮箱验证码")
     public Result<String> sendEmail (@RequestBody LoginDto loginDto) {
@@ -64,6 +68,20 @@ public class CommonController {
             log.info("文件上传失败：{}",e.getMessage());
         }
         return Result.error(MessageErrorConstant.UPLOAD_FAILED);
+    }
+
+    /**
+     * 获取所有controller包下的所有接口地址
+     * @return
+     */
+    @GetMapping("/api-paths")
+    public Result<Set<String>> getAllApiPath() {
+        return Result.success(controllerScanner.getAllControllerEndpoints());
+    }
+
+    @GetMapping("/common/hello")
+    public void hello () {
+
     }
 
 

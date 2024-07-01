@@ -4,13 +4,11 @@ package com.mk.module.controller;
 import com.mk.module.service.IUserService;
 import com.mk.pojo.entity.User;
 import com.mk.pojo.result.Result;
-import com.mk.utils.ControllerScanner;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Set;
 
 import static com.mk.pojo.result.Result.success;
 
@@ -27,11 +25,9 @@ import static com.mk.pojo.result.Result.success;
 public class UserController {
 
     private final IUserService userService;
-    private final ControllerScanner controllerScanner;
 
-    public UserController(IUserService userService, ControllerScanner controllerScanner) {
+    public UserController(IUserService userService) {
         this.userService = userService;
-        this.controllerScanner = controllerScanner;
     }
 
     @GetMapping
@@ -42,10 +38,7 @@ public class UserController {
     }
 
 
-    @GetMapping("/api-paths")
-    public Result<Set<String>> getAllApiPath() {
-        return success(controllerScanner.getAllControllerEndpoints());
-    }
+
 
 
 }
