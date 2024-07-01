@@ -1,0 +1,87 @@
+server:
+  port: 9090
+
+spring:
+  mail:
+    # 发送者邮箱
+    username: "***@163.com"
+    #申请到的授权码
+    password: DMH***
+    # 配置 SMTP 服务器地址
+    host: smtp.163.com
+    # 端口号465或587
+    port: 465
+    protocol: smtps
+    # 默认的邮件编码为UTF-8
+    default-encoding: UTF-8
+    # 配置SSL 加密工厂
+    properties:
+      mail:
+        smtp:
+          socketFactoryClass: javax.net.ssl.SSLSocketFactory
+          #表示开启 DEBUG 模式，这样，邮件发送过程的日志会在控制台打印出来，方便排查错误
+          debug: true
+          ssl: true
+  profiles:
+    active: dev
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: ${db.url}
+      username: ${db.username}
+      password: ${db.password}
+      # 初始连接数
+      initialSize: 5
+      # 最小连接池数量
+      minIdle: 10
+      # 最大连接池数量
+      maxActive: 20
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 300000
+      # 配置一个连接在池中最大生存的时间，单位是毫秒
+      maxEvictableIdleTimeMillis: 900000
+  redis:
+    host: ${redis.host}
+    port: ${redis.port}
+    database: ${redis.database}
+logging:
+  file:
+    name: App.log
+    # 或
+    # path: /var/log/myapp
+  level:
+    root: info
+    com.mk.module.mapper: debug
+  logback:
+    rolling policy:
+      max-file-size: 10MB
+      file-name-pattern: App.%d{yyyy-MM-dd}.%i.log
+      max-history: 30
+
+mybatis-plus:
+  configuration:
+    # 开启mybatis-plus日志
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: on
+  type-aliases-package: com.example.setsail.pojo
+  mapper-locations: classpath:mapper/*.xml
+
+
+app:
+  jwt:
+    user-secret-key: "User#@!Key"
+    user-expire: 86400000
+    user-token-name: authorization
+    admin-secret-key: "Admin#@!Key"
+    admin-expire: 86400000
+    admin-token-name: token
+  alioss:
+    endpoint: "******"
+    access-key-id: "******"
+    access-key-secret: "******"
+    bucket-name: "******"
+

@@ -1,0 +1,8 @@
+db:
+  url: jdbc:mysql://localhost:9906/db_dev?serverTimezone=UTC&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true
+  username: root
+  password: 123456
+redis:
+  host: 127.0.0.1
+  port: 6379
+  database: 1

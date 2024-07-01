@@ -1,0 +1,77 @@
+{
+  "groups": [
+    {
+      "name": "app.alioss",
+      "type": "com.mk.properties.AliOssProperties",
+      "sourceType": "com.mk.properties.AliOssProperties"
+    },
+    {
+      "name": "app.jwt",
+      "type": "com.mk.properties.JwtProperties",
+      "sourceType": "com.mk.properties.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.alioss.access-key-id",
+      "type": "java.lang.String",
+      "description": "阿里云账户的Access Key ID",
+      "sourceType": "com.mk.properties.AliOssProperties"
+    },
+    {
+      "name": "app.alioss.access-key-secret",
+      "type": "java.lang.String",
+      "description": "阿里云账户的Access Key Secret",
+      "sourceType": "com.mk.properties.AliOssProperties"
+    },
+    {
+      "name": "app.alioss.bucket-name",
+      "type": "java.lang.String",
+      "description": "OSS存储空间的名称",
+      "sourceType": "com.mk.properties.AliOssProperties"
+    },
+    {
+      "name": "app.alioss.endpoint",
+      "type": "java.lang.String",
+      "description": "OSS服务的访问域名",
+      "sourceType": "com.mk.properties.AliOssProperties"
+    },
+    {
+      "name": "app.jwt.admin-expire",
+      "type": "java.lang.Long",
+      "description": "管理员jwt过期时间",
+      "sourceType": "com.mk.properties.JwtProperties"
+    },
+    {
+      "name": "app.jwt.admin-secret-key",
+      "type": "java.lang.String",
+      "description": "管理员jwt秘钥",
+      "sourceType": "com.mk.properties.JwtProperties"
+    },
+    {
+      "name": "app.jwt.admin-token-name",
+      "type": "java.lang.String",
+      "description": "管理员请求头token名称",
+      "sourceType": "com.mk.properties.JwtProperties"
+    },
+    {
+      "name": "app.jwt.user-expire",
+      "type": "java.lang.Long",
+      "description": "用户jwt过期时间",
+      "sourceType": "com.mk.properties.JwtProperties"
+    },
+    {
+      "name": "app.jwt.user-secret-key",
+      "type": "java.lang.String",
+      "description": "用户jwt秘钥",
+      "sourceType": "com.mk.properties.JwtProperties"
+    },
+    {
+      "name": "app.jwt.user-token-name",
+      "type": "java.lang.String",
+      "description": "用户请求头token名称",
+      "sourceType": "com.mk.properties.JwtProperties"
+    }
+  ],
+  "hints": []
+}

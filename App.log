@@ -1,0 +1,142 @@
+2024-07-01 14:01:55.795  INFO 71053 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 14:01:55.796  INFO 71053 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 14:16:57.253  INFO 73939 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 73939 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 14:16:57.255  INFO 73939 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 14:16:57.953  INFO 73939 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 14:16:57.959  INFO 73939 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 14:16:57.959  INFO 73939 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 14:16:58.005  INFO 73939 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 14:16:58.006  INFO 73939 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 715 ms
+2024-07-01 14:16:58.054  INFO 73939 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 14:16:58.201  INFO 73939 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 14:16:58.372  WARN 73939 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/home/maike/data/springbootProjects/springboot-template/target/classes/com/mk/module/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mk.module.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-07-01 14:16:58.372  INFO 73939 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 14:16:58.377  INFO 73939 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 14:16:58.379  INFO 73939 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-07-01 14:16:58.392  INFO 73939 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-07-01 14:16:58.404 ERROR 73939 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/home/maike/data/springbootProjects/springboot-template/target/classes/com/mk/module/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mk.module.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.30.jar:5.3.30]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.16.jar:2.7.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.16.jar:2.7.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.16.jar:2.7.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.16.jar:2.7.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.16.jar:2.7.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.16.jar:2.7.16]
+	at com.mk.SpringApplication.main(SpringApplication.java:12) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mk.module.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:693) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:408) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mk.module.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.30.jar:5.3.30]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-5.3.30.jar:5.3.30]
+	... 34 common frames omitted
+
+2024-07-01 14:17:16.997  INFO 74106 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 74106 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 14:17:16.999  INFO 74106 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 14:17:17.635  INFO 74106 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 14:17:17.640  INFO 74106 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 14:17:17.640  INFO 74106 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 14:17:17.682  INFO 74106 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 14:17:17.682  INFO 74106 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 658 ms
+2024-07-01 14:17:17.725  INFO 74106 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 14:17:17.887  INFO 74106 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 14:17:18.393  INFO 74106 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 14:17:18.399  INFO 74106 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 1.663 seconds (JVM running for 2.006)
+2024-07-01 14:17:56.731  INFO 74106 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 14:17:56.731  INFO 74106 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-01 14:17:56.732  INFO 74106 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-01 14:17:56.750 ERROR 74106 --- [http-nio-9090-exec-2] com.mk.interceptor.CheckInterceptor      : jwt解析错误
+2024-07-01 14:19:03.816  INFO 74106 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 14:19:03.825  INFO 74106 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 14:21:21.946 DEBUG 75757 --- [http-nio-9090-exec-2] c.m.module.mapper.UserMapper.selectList  : ==>  Preparing: SELECT id,name FROM user
+2024-07-01 14:21:21.967 DEBUG 75757 --- [http-nio-9090-exec-2] c.m.module.mapper.UserMapper.selectList  : ==> Parameters: 
+2024-07-01 14:21:21.981 DEBUG 75757 --- [http-nio-9090-exec-2] c.m.module.mapper.UserMapper.selectList  : <==      Total: 2
+2024-07-01 14:58:29.527  WARN 79893 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commonController': Unsatisfied dependency expressed through field 'aliOssUtil'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mk.utils.AliOssUtil' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-07-01 14:58:29.564 ERROR 79893 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field aliOssUtil in com.mk.module.controller.common.CommonController required a bean of type 'com.mk.utils.AliOssUtil' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.mk.utils.AliOssUtil' in your configuration.
+
+2024-07-01 15:01:24.516  INFO 80395 --- [main] com.mk.SpringApplication                 : Starting SpringApplication using Java 21.0.3 on maikeUbuntu with PID 80395 (/home/maike/data/springbootProjects/springboot-template/target/classes started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:01:24.518  INFO 80395 --- [main] com.mk.SpringApplication                 : The following 1 profile is active: "dev"
+2024-07-01 15:01:24.881  INFO 80395 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:01:24.882  INFO 80395 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:01:24.895  INFO 80395 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:01:25.333  INFO 80395 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2024-07-01 15:01:25.339  INFO 80395 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-01 15:01:25.339  INFO 80395 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-07-01 15:01:25.391  INFO 80395 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-01 15:01:25.392  INFO 80395 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 843 ms
+2024-07-01 15:01:25.447  INFO 80395 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:01:25.624  INFO 80395 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:01:26.043  INFO 80395 --- [main] com.mk.config.OssConfiguration           : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:01:26.333  INFO 80395 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 15:01:26.339  INFO 80395 --- [main] com.mk.SpringApplication                 : Started SpringApplication in 2.076 seconds (JVM running for 2.446)
+2024-07-01 15:13:44.209  INFO 81320 --- [main] com.mk.SpringApplicationTests            : Starting SpringApplicationTests using Java 21.0.3 on maikeUbuntu with PID 81320 (started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:13:44.209  INFO 81320 --- [main] com.mk.SpringApplicationTests            : The following 1 profile is active: "dev"
+2024-07-01 15:13:44.659  INFO 81320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:13:44.660  INFO 81320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:13:44.674  INFO 81320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:13:44.999  INFO 81320 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:13:45.280  INFO 81320 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:13:45.755  INFO 81320 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:13:46.544  INFO 81320 --- [main] com.mk.SpringApplicationTests            : Started SpringApplicationTests in 2.568 seconds (JVM running for 4.023)
+2024-07-01 15:13:47.114  INFO 81320 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 15:13:47.119  INFO 81320 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2024-07-01 15:20:42.662  INFO 82602 --- [main] com.mk.SpringApplicationTests            : Starting SpringApplicationTests using Java 21.0.3 on maikeUbuntu with PID 82602 (started by maike in /home/maike/data/springbootProjects/springboot-template)
+2024-07-01 15:20:42.664  INFO 82602 --- [main] com.mk.SpringApplicationTests            : The following 1 profile is active: "dev"
+2024-07-01 15:20:43.126  INFO 82602 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-01 15:20:43.128  INFO 82602 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-01 15:20:43.151  INFO 82602 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-07-01 15:20:43.591  INFO 82602 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2024-07-01 15:20:43.973  INFO 82602 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-07-01 15:20:44.723  INFO 82602 --- [main] com.mk.config.AliOssConfiguration        : 开始创建阿里云文件上传工具对象：AliOssProperties(endpoint=******, accessKeyId=******, accessKeySecret=******, bucketName=******)
+2024-07-01 15:20:45.451  INFO 82602 --- [main] com.mk.SpringApplicationTests            : Started SpringApplicationTests in 3.019 seconds (JVM running for 4.391)
+2024-07-01 15:20:46.007  INFO 82602 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-07-01 15:20:46.015  INFO 82602 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
