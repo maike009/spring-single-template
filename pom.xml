@@ -27,11 +27,12 @@
         <jakarta-validation.version>3.0.2</jakarta-validation.version>
         <!--jjwt-->
         <jjwt.version>0.9.1</jjwt.version>
+        <!--阿里oss && jwt工具类报错解决 java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter-->
+        <jaxb.version>2.3.1</jaxb.version>
         <!--lombok-->
         <lombok.version>1.18.32</lombok.version>
         <!--阿里云OSS相关依赖-->
         <oss.version>3.17.1</oss.version>
-        <jaxb.version>2.3.1</jaxb.version>
         <activation.version>1.1.1</activation.version>
         <jaxb.glassfish.version>2.3.3</jaxb.glassfish.version>
 
@@ -92,11 +93,6 @@
             <version>${oss.version}</version>
         </dependency>
         <dependency>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-            <version>${jaxb.version}</version>
-        </dependency>
-        <dependency>
             <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
             <version>${activation.version}</version>
@@ -154,6 +150,12 @@
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>${jjwt.version}</version>
+        </dependency>
+        <!--jwt工具类报错解决 java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter-->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>${jaxb.version}</version>
         </dependency>
 
 
