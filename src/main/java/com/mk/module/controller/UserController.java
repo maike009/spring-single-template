@@ -2,8 +2,11 @@ package com.mk.module.controller;
 
 
 import com.mk.module.service.IUserService;
+import com.mk.pojo.dto.UserDto;
 import com.mk.pojo.entity.User;
+import com.mk.pojo.result.PageResult;
 import com.mk.pojo.result.Result;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,10 +34,15 @@ public class UserController {
     }
 
     @GetMapping
-//    @OperationLog(module = "员工管理", operation = OperationType.ADD)
+//    @OperationLog(module = "用户管理", operation = OperationType.ADD)
     public Result<List<User>> getUsers(){
         List<User> list = userService.list();
         return success(list);
+    }
+
+    @GetMapping("page")
+    public Result<PageResult<User>> getUsers(@Validated UserDto userDto){
+        return userService.getUsers(userDto);
     }
 
 

@@ -49,18 +49,18 @@ spring:
     port: ${redis.port}
     database: ${redis.database}
 logging:
-  file:
-    name: App.log
-    # 或
-    # path: /var/log/myapp
+#  file:
+#    name: App.log
+#    # 或
+#    # path: /var/log/myapp
   level:
     root: info
     com.mk.module.mapper: debug
-  logback:
-    rolling policy:
-      max-file-size: 10MB
-      file-name-pattern: App.%d{yyyy-MM-dd}.%i.log
-      max-history: 30
+#  logback:
+#    rolling policy:
+#      max-file-size: 10MB
+#      file-name-pattern: App.%d{yyyy-MM-dd}.%i.log
+#      max-history: 30
 
 mybatis-plus:
   configuration:
