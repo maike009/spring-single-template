@@ -4,12 +4,12 @@ import java.beans.Introspector;
 import java.io.Serializable;
 import java.lang.invoke.SerializedLambda;
 import java.lang.reflect.Method;
+import java.util.function.Function;
 
 public class LambdaUtils {
 
     @FunctionalInterface
-    public interface SFunction<T, R> extends Serializable {
-        R apply(T t);
+    public interface SFunction<T, R> extends Function<T,R>,Serializable {
     }
 
     public static <T> String getFieldName(SFunction<T, ?> fn) {

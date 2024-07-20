@@ -41,7 +41,7 @@ public class PageParamDto {
      * @param <T> 泛型参数，表示页面元素的类型。
      * @return 返回转换后的Page对象。
      */
-    public <T> Page<T> toMpPage(OrderItem... orderItems) {
+    public <T> Page<T> toMpPageConditions(OrderItem... orderItems) {
         Page<T> page = new Page<>(pageNo, pageSize);
         // 是否手动指定排序方式
         if (orderItems != null && orderItems.length > 0) {
@@ -61,16 +61,18 @@ public class PageParamDto {
     }
 
     /**
+     * 创建Mybatis Plus的分页条件
      * 根据当前的分页参数和默认排序方式，转换为Mybatis Plus的Page对象。
      * 如果没有指定排序字段，则使用默认排序字段和排序方式。
+     * 使用lambda表达式获取排序字段
      *
      * @param defaultSortByFunction 默认的排序字段方法引用。
      * @param isAsc         默认的排序方式，true为升序，false为降序。
      * @param <T>           泛型参数，表示页面元素的类型。
      * @param <R>           实体类的类型
-     * @return 返回转换后的Page对象。
+     * @return 返回转换后的Page对象。条件
      */
-    public <T, R> Page<T> toMpPage(LambdaUtils.SFunction<R, ?> defaultSortByFunction, boolean isAsc) {
+    public <T, R> Page<T> toMpPageConditions(LambdaUtils.SFunction<T, ?> defaultSortByFunction, boolean isAsc) {
         if (StringUtils.isBlank(sortBy)){
             sortBy = getFieldName(defaultSortByFunction);
             this.isAsc = isAsc;
@@ -92,7 +94,7 @@ public class PageParamDto {
      * @param <T>           泛型参数，表示页面元素的类型。
      * @return 返回转换后的Page对象。
      */
-    public <T> Page<T> toMpPage(String defaultSortBy, boolean isAsc) {
+    public <T> Page<T> toMpPageConditions(String defaultSortBy, boolean isAsc) {
         if (StringUtils.isBlank(sortBy)){
             sortBy = defaultSortBy;
             this.isAsc = isAsc;
@@ -114,7 +116,7 @@ public class PageParamDto {
      * @return 返回转换后的Page对象，排序方式为创建时间降序。
      */
     public <T> Page<T> toMpPageDefaultSortByCreateTimeDesc() {
-        return toMpPage("create_time", false);
+        return toMpPageConditions("create_time", false);
     }
 
     /**
@@ -125,6 +127,6 @@ public class PageParamDto {
      * @return 返回转换后的Page对象，排序方式为创建时间降序。
      */
     public <T> Page<T> toMpPageDefaultSortByUpdateTimeDesc() {
-        return toMpPage("update_time", false);
+        return toMpPageConditions("update_time", false);
     }
 }
